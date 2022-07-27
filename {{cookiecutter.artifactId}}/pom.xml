@@ -8,5 +8,15 @@
     <properties>
         <maven.compiler.source>{{ cookiecutter.javaVersion }}</maven.compiler.source>
         <maven.compiler.target>{{ cookiecutter.javaVersion }}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    {% if cookiecutter.junit == 'yes'%}<dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.9.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>{% endif %}
 </project>

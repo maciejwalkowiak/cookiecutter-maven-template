@@ -2,5 +2,6 @@
     "groupId": "com.example",
     "artifactId": "demo",
     "javaVersion": "11",
+    "junit": ["yes","no"],
     "__package": "{{ cookiecutter.groupId + '.' + cookiecutter.artifactId }}"
 }
